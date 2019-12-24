@@ -6,23 +6,30 @@
       name="viewport"
       content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>生日快乐🎂</title>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.js"></script>
-    <script>
-      var polyfill = new WebXRPolyfill();
-    </script>
   </head>
 
   <body style="margin:0px; overflow: hidden;">
     <a-scene embedded arjs="sourceType: webcam;debugUIEnabled: false;">
       <a-marker preset="hiro">
-        <!-- <a-entity
+        <a-entity
           position="-3 2 0"
-          text="width: 5; value:I am Psyduck. We are pokemon. We love you"
-        ></a-entity> -->
-        <a-entity position="0 0 0" gltf-model="src: url(res/scene.gltf)">
+          rotation="-140 -50 -50"
+          text="width: 5; value:你是个脑瘫。"
+        ></a-entity>
+        <a-entity
+          position="0 0 0"
+          rotation="-100 0 0"
+          gltf-model="src: url(res/scene.gltf)"
+        >
         </a-entity>
       </a-marker>
     </a-scene>
